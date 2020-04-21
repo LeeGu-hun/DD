@@ -1,34 +1,10 @@
 <%@ page language="java" pageEncoding="UTF-8"
-	contentType="text/html; charset=UTF-8"%>
+    contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-table {
-	border: 1px solid #000;
-	width : 800px;
-	height : 700px;
-	font-size : 30pt;
-}
-
-th, td {
-	border: 1px solid #000;
-	text-align : center;
-}
-
-th {
-	height : 200px;
-}
-
-#select {
-	width : 200px;
-	height : 100px;	
-	margin-left : 600px;
-	font-size : 20pt;
-}
-</style>
 </head>
 <body>
 	<table>
