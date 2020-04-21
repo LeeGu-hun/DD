@@ -15,5 +15,7 @@
 <P>  The time on the server is ${serverTime}. </P>
 <a href="/test/report">매출현황</a><br><br>
 <a href="/test/current">배송현황</a><br><br>
+<a href="/test/dron_admin">드론 관리(총 관리자)</a><br><br>
+<a href="/test/dron_young">드론 상태 확인(영업소)</a><br><br>
 </body>
 </html>
