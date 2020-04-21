@@ -13,6 +13,7 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
-<a href="/views/report">매출현황</a><br><br>
+<a href="/test/report">매출현황</a><br><br>
+<a href="/test/current">배송현황</a><br><br>
 </body>
 </html>
