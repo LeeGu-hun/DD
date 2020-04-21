@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.dd.mapper.UserMapper">
+  <resultMap type="org.dd.domain.UserVO" id="usersMap">
+    <id property="id" column="id"/>
+    <result property="user_id" column="user_id"/>
+    <result property="password" column="password"/>
+    <result property="user_name" column="user_name"/>
+    <result property="created_on" column="created_on"/>
+    <result property="expires_on" column="expires_on"/>
+    <result property="quota" column="quota"/>
+    <result property="products" column="products"/>
+    <result property="admin_user" column="admin_user"/>
+    <result property="id" column="id"/>
+    <collection property="authList" resultMap="authMap"></collection> 
+  </resultMap>
+  
+  <resultMap type="org.dd.domain.AuthVO" id="authMap">
+    <result property="userid" column="user_id"/>
+    <result property="auth" column="auth"/>
+  </resultMap>
+  
+  <select id="checkLogin" resultMap="usersMap">
+		SELECT 
+		  u.user_id,user_name,password,created_on,quota,
+		  products, expires_on,admin_user,id, auth
+		FROM 
+		  sale_users u LEFT OUTER JOIN sale_users_auth a 
+		  on u.user_id = a.userid 
+		WHERE u.id = #{id}
+  </select>
+
+
+</mapper>
+
+
+
+
+
+
+
