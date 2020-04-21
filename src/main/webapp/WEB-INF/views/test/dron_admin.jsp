@@ -46,11 +46,6 @@ vertical-align: middle;}
 		</div>
 		
 		<div class="footer">
-		<p style="text-align: right; margin-right: 100px; font-size: 30px;">합계 :
-		<input type="text" style="height: 35px;"/>
-		</p>
-	
-		
 		</div>
 	
 		
