@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 
+<<<<<<< HEAD
 <head>
 
   <meta charset="utf-8">
@@ -75,6 +76,13 @@
   <!-- Custom scripts for this template -->
   <script src="resources/js/resume.min.js"></script>
 
+=======
+<P>  The time on the server is ${serverTime}. </P>
+<a href="/test/report">매출현황</a><br><br>
+<a href="/test/current">배송현황</a><br><br>
+<a href="/test/dron_admin">드론 관리(총 관리자)</a><br><br>
+<a href="/test/dron_young">드론 상태 확인(영업소)</a><br><br>
+>>>>>>> branch 'master' of https://github.com/LeeGu-hun/DD.git
 </body>
 
 </html>
